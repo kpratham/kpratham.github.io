@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get it done</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style3.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script> 
+        $(document).ready(function () { 
+  
+            // Add smooth scrolling to all links 
+            $("a").on('click', function (event) { 
+  
+                // Make sure this.hash has a value 
+                // before overriding default behavior 
+                if (this.hash !== "") { 
+  
+                    // Prevent default anchor 
+                    // click behavior 
+                    event.preventDefault(); 
+  
+                    // Store hash 
+                    var hash = this.hash; 
+  
+                    // Using jQuery's animate() method  
+                    // to add smooth page scroll 
+                    // The optional number (800) specifies 
+                    // the number of milliseconds it takes 
+                    // to scroll to the specified area 
+                    $('html, body').animate({ 
+                        scrollTop: $(hash).offset().top 
+                    }, 1000, function () { 
+  
+                        // Add hash (#) to URL when done  
+                        // scrolling (default click behavior) 
+                        window.location.hash = hash; 
+                    }); 
+                } // End if 
+            }); 
+        }); 
+    </script> 
+    </head>
+    <body>
+        <div id="nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>
+                            <ul id="nav-list-1">
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Experience">Experience</a></li>
+                                <li><a href="#Projects">Projects</a></li>
+                                <li><a href="#Interests">Interests</a></li>
+                                <li><a href="#Contact">Contact</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>
+                           <ul id="nav-list-2">
+                                <li><a href="#"><img src="fb1.png" style="width:42px;height:42px;border:0;"></a></li>
+                                <li><a href="#"><img src="ig.png" style="width:42px;height:42px;border:0;"></a></li>
+                                <li><a href="#"><img src="pin.png" style="width:42px;height:42px;border:0;"></a></li>
+                                <li><a href="#"><img src="in.png" style="width:42px;height:42px;border:0;"></a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="name">
+            <div class="container-fluid">
+                <p id="nameInfo">
+                    <p>Prathamesh Kapse</p>
+                    <h6>JARVIS, sometimes you gotta RUN before you can WALK</h6>
+                </p>
+            </div>
+        </div>
+        <div id="tagline">
+            <div class="container-fluid">
+                <p>My name is Tony Stark and I’m not afraid of you.<br> I know you’re a coward, so I decided… that you just died, pal.<br> I’m gonna come get the body. There’s no politics here, it’s just good old-fashioned revenge</p>
+            </div>
+        </div>
+        <div id="About">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p id="ab-l">
+                            About
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p id="ab-r">
+                           Welcome to my website!<br>Thank you for being here. Most people don’t know this, but before all this began I lived as a monk for 3 years and built philanthropic ventures. Today I am a host, storyteller, viral content creator and experiment maker. It’s been a mission of mine to spread knowledge at the pace we want entertainment, something I like to call making wisdom go viral. Since launching my channel in 2016, I’ve garnered over 4 billion views and 24+ million followers.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div id="Experience">
+            <div class="container-fluid">
+                <p id="expTitle">Experience</p>
+            </div>
+            <div class="container-fluid">
+                <div class="timeline">
+                    <div class="tblock">
+                        <div class="content">
+                            <h3>Application Developer</h3>
+                            <h5 style="color: gray;">ORACLE, India</h5>
+                            <hr>
+                            <p>
+                                Facenet (Tensorflow implementation of OpenFace) was used to identify and recognize people in a video frame.
+                                All the current systems can be used for recognizing people only at same age. We developed a system to keep an eye on human trafficking. By fine-tuning the current available Facenet code with Large-Age-Gap dataset we tried to match missing people in a cctv footage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="tblock">
+                        <div class="content">
+                            <h3>General Secretary</h3>
+                            <h5 style="color: gray;">EA &amp; Club, NIT Warangal</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="tblock">
+                        <div class="content">
+                            <h3>2019 Summer Internship</h3>
+                            <h5 style="color: gray;">Robotics Lab, VNIT</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.jhbhbfdscjh cjahbhbcjhc cjcjhb cd jhvdcjhcdhjcd jhdcjhb dcbjh  jhcdhjbcdjhb jhdchb dcjhb
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="tblock">
+                        <div class="content">
+                            <h3>2018 Summer Internship</h3>
+                            <h5 style="color: gray;">IISc Bangalore</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.jhbhbfdscjh cjahbhbcjhc cjcjhb cd jhvdcjhcdhjcd jhdcjhb dcbjh  jhcdhjbcdjhb jhdchb dcjhb
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="tblock">
+                        <div class="content">
+                            <h3>Researcher (2018-19)</h3>
+                            <h5 style="color: gray;">Skylark-Labs</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.jhbhbfdscjh cjahbhbcjhc cjcjhb cd jhvdcjhcdhjcd jhdcjhb dcbjh  jhcdhjbcdjhb jhdchb dcjhb
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="Projects">
+            <div class="container-fluid">
+                <p id="pTitle">My Work.<a href="./myWeb/Projects/project.html"> See more </a></p>
+                <div class="igrid">
+                    <div class="container">
+                        <img src="./myWeb/Projects/baja2.jpg" alt="Arduino" style="width:300px; height: 190px;">
+                        <img src="./myWeb/Projects/arm.jpg" alt="Pi" style="width:300px; height: 190px;">
+                        <img src="./myWeb/Projects/code1.jpg" alt="Robotics" style="width:300px; height: 190px;">
+                    </div>
+                </div>
+                <p id="pFooter">All that we call ideal in Greek or any other art, because to us it is false and visionary, was, to the makers of it, true and existent.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+        <div id="Interests">
+            <p id="intTitle">Interests</p>
+            <div class="row">
+              <div class="column">
+                <img src="./myWeb/interest/ard.png" alt="Arduino" style="width:60px">
+                <p>Arduino</p>
+              </div>
+              <div class="column">
+                <img src="./myWeb/interest/pi.png" alt="Pi" style="width:60px">
+                <p>Raspberry Pi</p>
+              </div>
+              <div class="column">
+                <img src="./myWeb/interest/robot.png" alt="Robotics" style="width:60px">
+                <p>Robotics</p>
+              </div>
+              <div class="column">
+                <img src="./myWeb/interest/ml.png" alt="mech" style="width:60px">
+                <p>ML</p>
+              </div>
+              <div class="column">
+                <img src="./myWeb/interest/iot.png" alt="IOT" style="width:60px">
+                <p>IOT</p>
+              </div>
+              <div class="column">
+                <img src="./myWeb/interest/web.png" alt="WebDev" style="width:60px">
+                <p>WebDev</p>
+              </div>
+             <div class="column">
+                <img src="./myWeb/interest/mech.png" alt="Mech" style="width:60px">
+                <p>Machines</p>
+              </div>
+            </div>
+            <div class="container-fluid">
+                <p id="intFooter"><q>What? Blow something up? I already did that.</q></p>
+            </div>
+            <hr>
+        </div>
+        </div>
+        <div id="Contact">
+        <!-- Section: Contact v.3 -->
+        <section class="container-fluid">
+
+          <!-- Form with header -->
+          <div class="card">
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-lg-8" style="background-color: whitesmoke;">
+
+                <div class="card-body form">
+
+                  <!-- Header -->
+                  <h3 class="mt-4">Get in touch</h3>
+
+                  <!-- Grid row -->
+                  <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="form-contact-name" class="form-control">
+                        <label for="form-contact-name" class="">Your name</label>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="form-contact-email" class="form-control">
+                        <label for="form-contact-email" class="">Your email</label>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+
+                  </div>
+                  <!-- Grid row -->
+
+                  <!-- Grid row -->
+                  <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="form-contact-phone" class="form-control">
+                        <label for="form-contact-phone" class="">Your phone</label>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="form-contact-company" class="form-control">
+                        <label for="form-contact-company" class="">Your company</label>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+
+                  </div>
+                  <!-- Grid row -->
+
+                  <!-- Grid row -->
+                  <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+                        <label for="form-contact-message">Your message</label>
+                        <a class="btn-floating btn-lg blue">
+                          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+
+                  </div>
+                  <!-- Grid row -->
+
+                </div>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-lg-4">
+
+                <div class="card-body contact text-center h-100 white-text">
+
+                  <h3 class="my-4 pb-2">Contact information</h3>
+                  <ul class="text-lg-left list-unstyled ml-4">
+                    <li>
+                      <p><i class="fa fa-map-marker" aria-hidden="true"></i> Bangalore, India</p>
+                    </li>
+                    <li>
+                      <p><i class="fa fa-phone" aria-hidden="true"></i> +91 9284883899</p>
+                    </li>
+                    <li>
+                      <p><i class="fa fa-envelope" aria-hidden="true"></i> kapsprathamnitw@gmail.com</p>
+                    </li>
+                  </ul>
+                  <hr class="hr-light my-4">
+                  <ul class="list-inline text-center list-unstyled">
+                    <li class="list-inline-item">
+                      <a class="p-2 fa-lg tw-ic">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="p-2 fa-lg li-ic">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="p-2 fa-lg ins-ic">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+          </div>
+          <!-- Form with header -->
+
+        </section>
+        <!-- Section: Contact v.3 -->
+        </div>
+    </body>
+</html>
