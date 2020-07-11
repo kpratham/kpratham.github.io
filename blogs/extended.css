@@ -1,0 +1,61 @@
+#main-page{
+    
+    background-color: #ece9e8;
+    text-align: center;
+}
+
+#title{
+    padding-top: 120px;
+    font-family: Century Gothic;
+    font-size: 80px;
+}
+
+#sub-title{
+    padding-bottom:80px;
+    font-size: 18px;
+    color: #6b6a69;
+    font-family: Consolas;
+}
+
+.nav-link{
+    padding: 30px;
+    color: #6e6c6c;
+    font-family: Consolas;
+    font-size: 20px;
+}
+
+#ext-title{
+    text-align: center;
+    background-color: #f7f6f6;
+    padding: 60px;
+    font-size: 60px;
+    font-family: Consolas;
+}
+
+#ext-content{
+    background-color: #ece9e8;
+}
+
+.ext-details{
+    font-family: Consolas;
+    padding-top: 60px;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#ext-content .container{
+    word-spacing: 7px;
+    line-height: 2;
+    font-family: Consolas;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.q-box{
+    word-spacing: 7px;
+    line-height: 2;
+    font-family: Consolas;
+    background-color: white;
+    padding: 30px;
+}
