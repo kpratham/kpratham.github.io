@@ -1,0 +1,174 @@
+#main-page{
+    
+    background-color: #ece9e8;
+    text-align: center;
+}
+
+#title{
+    padding-top: 120px;
+    font-family: Century Gothic;
+    font-size: 80px;
+    color: black;
+}
+
+#sub-title{
+    padding-bottom:80px;
+    font-size: 18px;
+    color: #6b6a69;
+    font-family: Consolas;
+}
+
+.nav-link{
+    padding: 30px;
+    color: #6e6c6c;
+    font-family: Consolas;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.card-left-1{
+    position: relative;
+    border-top: 90px solid #f0eded;
+    border-bottom: 70px solid #f0eded;
+    border-left: 50px solid #f0eded;
+    border-right: 50px solid #f0eded;
+    text-align: center;
+    height: 700px;
+}
+
+.card-left-1 .c-image{
+    position: absolute;
+    transform: rotate(10deg);
+    bottom: -35px;
+    right: -5px;
+}
+
+.c-image img {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition:         transform .2s ease-in-out;
+}
+
+.c-image img:hover {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+
+.card-left-1 .c-read{
+    position: absolute;
+    padding-left: 50px;
+    bottom: 50px;
+    text-align: left;
+    font-family: Consolas;
+    font-size: 20px;
+}
+
+.card-right-1{
+    position: relative;
+    text-align: center;
+    border-top: 90px solid #f4f2f1;
+    border-bottom: 70px solid #f4f2f1;
+    border-left: 50px solid #f4f2f1;
+    border-right: 50px solid #f4f2f1;
+    height: 700px;
+}
+
+.card-right-1 .c-image{
+    position: absolute;
+    transform: rotate(10deg);
+    bottom: -35px;
+    right: -5px;
+}
+
+.card-right-1 .c-read{
+    position: absolute;
+    padding-left: 50px;
+    bottom: 50px;
+    text-align: left;
+    font-family: Consolas;
+    font-size: 20px;
+}
+
+.c-head{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 30px;
+    font-family: Consolas;
+    font-weight: bold;
+    color: #494949;
+}
+
+.c-content{
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    background-color: white;
+    font-size: 18px;
+    font-family: Consolas;
+    color: #8c8c8c;
+    word-spacing: 7px;
+    line-height: 2;
+}
+
+
+.card-left-2{
+    position: relative;
+    border-top: 90px solid #f7f6f6;
+    border-bottom: 70px solid #f7f6f6;
+    border-left: 50px solid #f7f6f6;
+    border-right: 50px solid #f7f6f6;
+    text-align: center;
+    height: 700px;
+}
+
+.card-left-2 .c-image{
+    position: absolute;
+    transform: rotate(10deg);
+    bottom: -35px;
+    right: -5px;
+}
+
+.card-left-2 .c-read{
+    position: absolute;
+    padding-left: 50px;
+    bottom: 50px;
+    text-align: left;
+    font-family: Consolas;
+    font-size: 20px;
+}
+
+.card-right-2{
+    position: relative;
+    text-align: center;
+    border-top: 90px solid #fbfbfa;
+    border-bottom: 70px solid #fbfbfa;
+    border-left: 50px solid #fbfbfa;
+    border-right: 50px solid #fbfbfa;
+    height: 700px;
+}
+
+.card-right-2 .c-image{
+    position: absolute;
+    transform: rotate(10deg);
+    bottom: -35px;
+    right: -5px;
+}
+
+.card-right-2 .c-read{
+    position: absolute;
+    padding-left: 50px;
+    bottom: 50px;
+    text-align: left;
+    font-family: Consolas;
+    font-size: 20px;
+}
