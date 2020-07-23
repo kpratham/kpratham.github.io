@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Cabin|Comfortaa|Titillium Web">
+        <link rel="stylesheet" href="css/index4-style.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script> 
+          $(function () {
+                $(window).on('scroll', function () {
+                    if ( $(window).scrollTop() > 10 ) {
+                        $('.navbar').addClass('active');
+                    } else {
+                        $('.navbar').removeClass('active');
+                    }
+                });
+            });
+ 
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+
+    </script> 
+    </head>
+    <body>
+        
+        <!-- Navbar-->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a href="#" class="navbar-brand">
+                        <i class="fa fa-product-hunt fa-lg"></i> Kapse
+                    </a>
+                    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active p-3"><a href="#About" class="nav-link">About me<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item p-3"><a href="#Projects" class="nav-link">Projects</a></li>
+                            <li class="nav-item p-3"><a href="#Blog" class="nav-link">Blog</a></li>
+                            <li class="nav-item p-3"><a href="#Interests" class="nav-link">Interests</a></li>
+                            <li class="nav-item p-3"><a href="contact.html" class="nav-link ">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            
+         
+        <!--Homepage-->
+        <div class="container mt-5 mb-5 pt-5 pb-5" id="main-page">
+            <div class="row mt-5 mb-5 pt-5 pb-5">
+                
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-8" id="intro">
+                    <p id="name">Prathamesh Kapse</p>
+                    <p id="name-tag">JARVIS, sometimes you gotta RUN before you can WALK</p>
+                    <button type="button" class="btn btn-outline-light">Download CV</button>
+                </div>
+
+            </div>
+        </div>
+        <!--About me-->
+        <div class="container-fluid mt-5 pt-5 pb-4" id="About">
+            <br>
+            <div class="row mt-5 pt-2 pb-2">
+                <div class="col-md-6 align-self-center text-center sec-title">
+                    About
+                </div>
+                <div class="col-md-4" id="about-content">
+                    <div class="cc">Welcome to my website!</div>Thank you for being here. I am a robotics enthusiast who loves to explore real world problems. I love to build and break stuff, and learn from the experience. I spend most of my time exploring new technologies in the world. I look forward to use the knowledge that I have gained from my engineering years and all those hours I spent in my room learning, to help people. My aim is to bridge the gap between technology and society. I see a future where humans work more efficiently with AI machines. KFC's Cheesy crunch is my all time favorite and I LOVE RDJ.
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Portfolio start -->
+        <section class="portfolio" id="Projects">
+            <div class="container pt-5 pb-3">
+                        <hr>
+                <p class="p-5 m-4" id="proj-title">My Work</p>
+                <div class="row">
+                    <div class="col-md-4 p-3 c-1">
+                        <img src="images/baja.jpg" style="width: inherit;" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <p>SAE Baja</p>
+                                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#baja">Read More</button>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4 p-3 c-1">
+                        <img src="images/shop.png" style="width: inherit;" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <p>Shop Automation System</p>
+                                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#shop">Read More</button>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4 p-3 c-1">
+                        <img src="images/iccv.jpg" style="width: inherit;" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <p>ICCV 2019, S. Korea</p>
+                                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#iccv">Read More</button>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                
+                <div class="row pb-2">
+                    <div class="col-md-4 p-3 c-1">
+                        <img src="images/gest.jpg" style="width: inherit;" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <p>Gesture Control</p>
+                                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#gest">Read More</button>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4 p-3 c-1">
+                        <img src="images/arm.jpg" style="width: inherit;" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <p>Robotic exoskeleton with RL</p>
+                                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#fyp">Read More</button>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4 p-3 c-1">
+                        <img src="images/filter.png" style="width: inherit;" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <p>IIIT Allahbad Hackathon</p>
+                                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#filter">Read More</button>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio End -->
+        
+        <!--Portfolio Modals-->
+        <!-- baja -->
+        <div class="modal fade" id="baja" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Shop Automation System -->
+        <div class="modal fade" id="shop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- iccv -->
+        <!-- Modal -->
+        <div class="modal fade" id="iccv" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container-fluid">
+                    <p class="mod-title pt-2 pb-2 m-1">Cross-Age Face Recognition using DL</p>
+                    <div class="mod-info m-1">
+                        <p>Seoul, S. Korea</p>
+                        <p>CVPR 2019</p>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="row">
+                        <div class="col mod-problem">
+                            <p>
+                                <strong>Problem Statement : </strong>
+                                All the current systems can be used for recognizing people only at same age. We developed a system to keep an eye on human trafficking.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col mod-sol">
+                            <p>
+                                <strong>Proposed Solution : </strong>
+                                Facenet
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col align-self-center text-center p-2">
+                            <img src="images/iccv.jpg" class="mod-image">
+                        </div>
+                        <div class="col align-self-center mod-c p-2">
+                            Facenet (Tensorflow implementation of OpenFace) was used to identify and recognize people in a video frame. All the current systems can be used for recognizing people only at same age. We developed a system to keep an eye on human trafficking. By fine-tuning the current available Facenet code with Large-Age-Gap dataset we tried to match missing people in a cctv footage.
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <div class="row mt-4 pt-2">
+                        <div class="col mod-share text-center">
+                            <p>
+                                <strong>Share : </strong>
+                                  <a href="#"><i class="fa fa-linkedin-square fa-lg p-2" aria-hidden="true"></i></a>
+                                  <a href="#"><i class="fa fa-facebook-square fa-lg p-2" aria-hidden="true"></i></a>
+                                  <a href="#"><i class="fa fa-twitter-square fa-lg p-2" aria-hidden="true"></i></a>
+                                  <a href="#"><i class="fa fa-instagram fa-lg p-2" aria-hidden="true"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Gesture Control -->
+        <div class="modal fade" id="gest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Final Year Project -->
+        <div class="modal fade" id="fyp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- IIIT Allahbad -->
+        <div class="modal fade" id="filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Interests-->
+        <section id="Interests">
+            <div class="container p-5">
+                <hr>
+                <p class="sec-title p-5 m-4" id="int-title">Interests</p>
+                <div class="row">
+                    <div class="col int-content">
+                        <img src="images/mech.png" alt="Machines">
+                        <p>Machines</p>
+                    </div>
+                    <div class="col int-content">
+                        <img src="images/pi.png" alt="Mechatronics">
+                        <p>Pi</p>
+                    </div>
+                    <div class="col int-content">
+                        <img src="images/robot.png" alt="Robotics">
+                        <p>Robotics</p>
+                    </div>
+                    <div class="col int-content">
+                        <img src="images/ml.png" alt="ML">
+                        <p>ML</p>
+                    </div>
+                    <div class="col int-content">
+                        <img src="images/iot.png" alt="IOT">
+                        <p>IOT</p>
+                    </div>
+                    <div class="col int-content">
+                        <img src="images/web.png" alt="WebDev">
+                        <p>WebDev</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="container-fluid mt-5 mb-5">
+                    <p class="sec-line"><q> What? Blow something up? I already did that. </q></p>
+                </div>
+                <hr>
+            </div>
+        </section>
+        
+    </body>
+</html>
+
+
