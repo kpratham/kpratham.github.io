@@ -1,0 +1,232 @@
+body{
+    background-image: url(../images/brain.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    font-family: Titillium Web;
+}
+
+.navbar {
+    transition: all 0.4s;
+ 
+}
+
+.navbar .nav-link {
+    color: white;
+    font-family: Titillium Web;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-family: Titillium Web;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+#main-page{
+    margin-top: 5vw; 
+}
+
+#name{
+    font-weight: bold;
+    margin-top: 14vw;
+    margin-right: 1vw;
+    text-align: end;
+    font-family: Titillium Web;
+    font-size: 60px;
+    color: white;
+}
+
+#name-tag{
+    text-align: end;
+    font-family: Titillium Web;
+    color: white;
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+}
+
+#intro{
+    text-align: end;
+}
+
+.btn {
+  background-color: transparent;
+  font-family: Titillium Web;
+  border: 1.5px solid;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-right: 1vw;
+}
+
+#About{
+   font-family: Titillium Web;
+   color: black;
+   background-color: whitesmoke;
+}
+
+@media (max-width: 767px) {
+    #about-content{
+        padding-top: 30px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .cc{
+        text-align: center;
+    }
+}
+
+.portfolio{
+    background-color: whitesmoke;
+}
+
+#proj-title{
+    text-align: center;
+    font-size: 40px;
+    font-family: Titillium Web;
+}
+
+
+.text {
+  font-family: Titillium Web;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.c-1 {
+  position: relative;
+}
+
+.image {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;    
+  display: block;
+  width: inherit;
+  height: auto;
+}
+
+.overlay {
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.c-1:hover .overlay {
+  width: 100%;
+}
+
+.btn {
+  background-color: transparent;
+  font-family: Titillium Web;
+  border: 1.5px solid;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-right: 1vw;
+}
+
+.sec-title{
+    text-align: center;
+    font-size: 40px;
+    font-family: Titillium Web;
+}
+
+.mod-image{
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mod-title{
+    font-size: 30px;
+}
+
+.mod-info{
+    font-size: 15px;
+}
+
+.mod-share p a{
+    color: black;
+}
+
+#Interests{
+    background-color: whitesmoke;
+}
+
+.int-content{
+    text-align: center;
+}
+
+.int-content img{
+    width: 60px;
+}
+
+.int-content img:hover{
+    
+    filter: invert();
+}
+
+@media (max-width: 767px){
+    .int-content p{
+        font-size: 14px;
+    }
+    .int-content img{
+            width: 40px;
+        }
+} 
+
+.sec-line{
+    text-align: center;
+    font-size: 20px;
+    }
